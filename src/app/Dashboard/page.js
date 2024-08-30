@@ -172,6 +172,7 @@ export default function Dashboard() {
             <div className="flex p-3 flex-row">
                 <Image
                   src="/images/location.png"
+                  alt="icon"
                   width={25}
                   height={20}
                   style={{ backgroundColor: "transparent", color: "white" }}
@@ -194,6 +195,7 @@ export default function Dashboard() {
                   <Image
                     src="/images/wind.png"
                     width={25}
+                    alt="icon"
                     height={100}
                     className="mx-2 icons"
                   ></Image>{" "}
@@ -216,13 +218,13 @@ export default function Dashboard() {
               </div>
               
               <div className="flex justify-evenly p-2">
-              <span className="flex font-light"> <Image src='/images/thermometer.png' width={25} height={100} className="icons"></Image> {cityData.main.pressure}Pa</span>
-              <span className="flex font-light"> <Image src='/images/isobars.png' width={25} height={100}  className="icons"></Image> {cityData.main.grnd_level}ms</span>
-              <span className="flex font-light"> <Image src='/images/eye.png' width={25} height={100}  className="icons"></Image>{cityData.visibility}ms</span>
+              <span className="flex font-light"> <Image src='/images/thermometer.png' width={25} height={100} className="icons"alt="icon"></Image> {cityData.main.pressure}Pa</span>
+              <span className="flex font-light"> <Image src='/images/isobars.png' width={25} height={100}  className="icons"alt="icon"></Image> {cityData.main.grnd_level}ms</span>
+              <span className="flex font-light"> <Image src='/images/eye.png' width={25} height={100}  className="icons"alt="icon"></Image>{cityData.visibility}ms</span>
               </div>
               <div className="flex items-center mx-[50px] p-2 ">
-              <span className="flex font-light"> <Image src='/images/sunrise.png' width={25} height={100}  className="icons"></Image>{new Date(cityData.sys.sunrise*1000).toLocaleString().split(",")[1]}</span>
-              <span className="flex font-light"> <Image src='/images/sunset.png' width={25} height={100}  className="icons"></Image> {new Date(cityData.sys.sunset*1000).toLocaleString().split(",")[1]}</span>
+              <span className="flex font-light"> <Image src='/images/sunrise.png' width={25} height={100}  className="icons"alt="icon"></Image>{new Date(cityData.sys.sunrise*1000).toLocaleString().split(",")[1]}</span>
+              <span className="flex font-light"> <Image src='/images/sunset.png' width={25} height={100}  className="icons"alt="icon"></Image> {new Date(cityData.sys.sunset*1000).toLocaleString().split(",")[1]}</span>
               </div>
               </div>
             </div>
