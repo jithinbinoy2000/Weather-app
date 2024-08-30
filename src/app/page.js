@@ -1,19 +1,11 @@
- "use client";
-// /page.js
+"use client";
 import Dashboard from "./Dashboard/page";
-import StoreProvider from "./StoreProvider";
-
 
 export default function Home() {
- 
-
   return (
     <>
       <div>
-        <StoreProvider>
-        <Dashboard/>
-        </StoreProvider>
-     
+        <Dashboard />
       </div>
     </>
   );

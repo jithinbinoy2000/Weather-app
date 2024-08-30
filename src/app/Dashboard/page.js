@@ -127,6 +127,7 @@ export default function Dashboard() {
                     width={25}
                     height={100}
                     className="mx-2"
+                    alt="icon"
                   ></Image>{" "}
                   {cityData.wind.speed} km/h
                 </div>
@@ -138,6 +139,7 @@ export default function Dashboard() {
                   src="/images/location.png"
                   width={25}
                   height={20}
+                  alt="icon"
                   style={{ backgroundColor: "transparent", color: "white" }}
                 />
                 {cityData.name}, {cityData.sys.country}
@@ -175,6 +177,7 @@ export default function Dashboard() {
                   alt="icon"
                   width={25}
                   height={20}
+                  alt="icon"
                   style={{ backgroundColor: "transparent", color: "white" }}
                   className="icons"
                 />
@@ -197,6 +200,7 @@ export default function Dashboard() {
                     width={25}
                     alt="icon"
                     height={100}
+                    alt="icon"
                     className="mx-2 icons"
                   ></Image>{" "}
                   {cityData.wind.speed} km/h
@@ -218,7 +222,8 @@ export default function Dashboard() {
               </div>
               
               <div className="flex justify-evenly p-2">
-              <span className="flex font-light"> <Image src='/images/thermometer.png' width={25} height={100} className="icons"alt="icon"></Image> {cityData.main.pressure}Pa</span>
+              <span className="flex font-light"> <Image src='/images/thermometer.png' width={25} height={100} className="icons"
+              alt="icon"></Image> {cityData.main.pressure}Pa</span>
               <span className="flex font-light"> <Image src='/images/isobars.png' width={25} height={100}  className="icons"alt="icon"></Image> {cityData.main.grnd_level}ms</span>
               <span className="flex font-light"> <Image src='/images/eye.png' width={25} height={100}  className="icons"alt="icon"></Image>{cityData.visibility}ms</span>
               </div>
